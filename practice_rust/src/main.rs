@@ -1,12 +1,16 @@
 use std::collections::HashMap;
+mod practice2;
+
 fn main() {
     println!("Hello, world!");
     read_from_vector();
     enum_and_vec();
     string_practice();
     hashmap();
-
-    
+    //practice2::error_handling();
+    //practice2::unwrap_error_handling();
+    let _error= practice2::question_mark_error_handling();
+    println!("{:?}", _error);
 }
 
 fn create_and_update_vector() -> Vec<i32>{
